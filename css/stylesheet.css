@@ -35,14 +35,21 @@ body *::after{
 }
 .main{
   background-color: blue;
-  height: 60vh;
-  padding: 30px;
+  display: flow-root;
+  padding: 30px 15px;
+  /* padding: 30px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; */
+}
+.group{
+  height: 60vh;
+  float: left;
+  margin: 0 15px;
 }
 .group1{
   background-color: pink;
   width: 250px;
+  float: right;
 }
 .group2{
   background-color: skyblue;
