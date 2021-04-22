@@ -304,7 +304,7 @@ body *::after{
 .sign .icon-right-open{
   color: #e25a2d;
 }
-/* 유효성 배너 검사 */
+/* 유효성 검사 배너 */
 .validation-list{
   margin: 25px 0 0 0;
   padding-left: 0;
@@ -319,6 +319,53 @@ body *::after{
   padding: 7px 10px 5px 45px;
   background: url(./images/validation_icon.png) no-repeat 20px 50%, 
             #ccc linear-gradient(180deg, #ccc , #eee);
+}
+/* 웹 관련 용어 */
+.term{
+  background: #ccc linear-gradient(180deg, #ccc, #eee);
+  margin-top: 20px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 15px 15px 0;
+}
+.term-heading{
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0;
+}
+.term-list{
+  margin: 10px 0 0 0;
+  display: flow-root;
+}
+.term-list-subject,
+.term-list-brief{
+  width: 145px;
+  float: right;
+}
+.term-list-subject{
+  color: #296897;
+}
+.term-list-thumbnail{
+  margin-left: 0;
+  float: left;
+}
+.term-list-thumbnail img{
+  display: block;
+}
+.term-list-brief{
+  margin-left: 0;
+  margin-top: 5px;
+  line-height: 1.5;
+}
+.term-list :nth-child(3n+3){
+  margin-bottom: 10px;
+}
+.term-list > :nth-child(6n+4),
+.term-list > :nth-child(6n+6){
+  float: left;
+}
+.term-list > :nth-child(6n+5){
+  float: right;
 }
 .slogan{
   background-color: purple;
