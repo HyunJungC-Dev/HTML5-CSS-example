@@ -473,7 +473,11 @@ body *::after{
 .icon-plus{
   color: hsla(110, 50%, 30%, 1)
 }
-
+/* 새소식 */
+.news{
+  background-color: yellow;
+  margin-top: 20px;
+}
 .slogan{
   background-color: purple;
   height: 10vh;
