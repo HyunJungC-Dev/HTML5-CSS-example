@@ -610,11 +610,40 @@ body *::after{
   position: relative;
 }
 .favorite-list{
-  background-color: yellow;
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
 }
+.favorite-list li{
+  counter-increment: number;
+  margin-top: 5px;
+  position: relative;
+}
+.favorite-list li::before{
+  display: inline-block;
+  content: counter(number);
+  color: #fff;
+  background-color: #aaa;
+  padding: 2px 5px;
+  font-size: 1.2rem;
+  border-radius: 2px;
+}
+.up, .stop, .down{
+  width: 9px;
+  height: 11px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -5px;
+  background: url(./images/rank.png) no-repeat 0 0;
+}
+.stop{
+  background-position: 0 50%;
+}
+.down{
+  background-position: 0 100%;
+}
+
 .favorite-more{
   position: absolute;
   padding: 8px;
