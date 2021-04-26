@@ -550,7 +550,7 @@ body *::after{
   flex-flow: row wrap;
   border-bottom: 1px solid #aaa;
 }
-.event-heading, .related-heading{
+.event-heading, .related-heading, .favorite-heading{
   font-size: 1.5rem;
   font-weight: 700;
   margin: 0;
@@ -604,7 +604,23 @@ body *::after{
   padding-left: 20px;
 
 }
-
+/* 인기사이트 */
+.favorite{
+  margin-top: 20px;
+  position: relative;
+}
+.favorite-list{
+  background-color: yellow;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.favorite-more{
+  position: absolute;
+  padding: 8px;
+  top: 4px;
+  right: 2px;
+}
 .slogan{
   background-color: purple;
   height: 10vh;
